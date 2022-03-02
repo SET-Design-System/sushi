@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>
+  <title>Textarea ·
     Sushi v.0.1</title>
   <link href="./assets/css/sushi.css" rel="stylesheet">
   <link href="./assets/css/sushi-icon.css" rel="stylesheet">
@@ -16,7 +16,7 @@
 
 <body>
   <div id="root">
-    <div class="ss-site index-page">
+    <div class="ss-site textarea-page">
       <div class="header"><span class="sitename"><span class="ss-icon-Sushi"></span>Sushi Design System</span>
         <ul>
           <li><a href="javascript:void(0);"><span class="label">Home</span></a></li>
@@ -66,9 +66,7 @@
       <div class="body">
         <div class="menu-panel">
           <ul class="ss-menu">
-            <li class="selected"><a href="index.html"><span class="ss-icon-Home"></span><span class="label">Home</span>
-                <div class="selected-box">&nbsp;</div>
-              </a></li>
+            <li><a href="index.html"><span class="ss-icon-Home"></span><span class="label">Home</span></a></li>
             <li><a href="icon.html"><span class="ss-icon-Settings-suggest"></span><span class="label">Icon</span></a></li>
             <li>
               <div class="header"><span class="ss-icon-Main-Component-filled"></span><span class="label">Component</span><span class="ss-icon-Maximize-arrow"></span></div>
@@ -76,7 +74,9 @@
             <li><a href="breadcrumb.html"><span class="ss-icon-Status-circle"></span><span class="label">Breadcrumb</span></a></li>
             <li><a href="button.html"><span class="ss-icon-Status-circle"></span><span class="label">Button &amp; Link</span></a></li>
             <li><a href="textfield.html"><span class="ss-icon-Status-circle"></span><span class="label">Textfield</span></a></li>
-            <li><a href="textarea.html"><span class="ss-icon-Status-circle"></span><span class="label">Textarea</span></a></li>
+            <li class="selected"><a href="textarea.html"><span class="ss-icon-Status-circle"></span><span class="label">Textarea</span>
+                <div class="selected-box">&nbsp;</div>
+              </a></li>
             <li><a href="menu.html"><span class="ss-icon-Status-circle"></span><span class="label">Page Menu</span></a></li>
             <li><a href="pageheader.html"><span class="ss-icon-Status-circle"></span><span class="label">Page Header</span></a></li>
             <li><a href="megamenu.html"><span class="ss-icon-Status-circle"></span><span class="label">Mega menu</span></a></li>
@@ -90,15 +90,45 @@
           </ul>
         </div>
         <div class="ss-page">
-          <div class="header -nobreadcrumbs"><span class="label">Welcome</span></div>
+          <div class="header -nobreadcrumbs"><span class="label">Textarea</span></div>
           <div class="body">
             <div class="ss-card">
-              <div class="header"><span class="label">Example</span></div>
-              <div class="body _padding">Example</div>
-            </div>
-            <div class="ss-card">
-              <div class="header"><span class="label">Structure</span></div>
-              <div class="body _padding">โครงสร้างของ App ประกอบด้วย 3 ชั้นคือ Site, Page และ Card โดยในแต่ละชั้นจะมี Header และ Body เป็นของตัวเอง<img src="./assets/images/structure.png" width="100%"></div>
+              <div class="header"><span class="label">&lt;TextArea&gt;</span></div>
+              <div class="body _padding">
+                <table>
+                  <tr>
+                    <th>Normal</th>
+                    <th>Error</th>
+                    <th>Disable</th>
+                    <th>Viewonly</th>
+                  </tr>
+                  <tr>
+                    <td><textarea class="ss-textarea"></textarea>&nbsp;</td>
+                    <td><textarea class="ss-textarea -error"></textarea>
+                      <div class="ss-error">Long Error</div>
+                    </td>
+                    <td><textarea class="ss-textarea -diasble"></textarea>&nbsp;</td>
+                    <td><textarea class="ss-textarea -viewonly"></textarea>&nbsp;</td>
+                  </tr>
+                </table><pre><code class="language-html">
+ &lt;div class="ss-textfield">
+   &lt;input class="ss-textfield" type="search" >
+ &lt;/div>
+ &nbsp;
+ &lt;div class=".-error">
+   &lt;input class="ss-textfield" type="search" value="Error input">
+    | Long error message
+ &lt;/div>
+ &nbsp;
+ &lt;div class="ss-textfield -disable">
+   &lt;input class="ss-textfield" type="search" value="Disable input">
+ &lt;/div>
+ &nbsp;
+ &lt;div class="ss-textfield -viewonly">
+   &lt;input class="ss-textfield" type="search" value="View only input">
+ &lt;/div>
+ &nbsp;</code></pre>
+              </div>
             </div>
           </div>
         </div>
