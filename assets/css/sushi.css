@@ -113,111 +113,125 @@ TABLE TD {
 }
 
 BUTTON.ss-button,
-a.ss-button {
+BUTTON.ss-link,
+a.ss-button,
+a.ss-link {
   --color: #231f20;
   --active-color: #231f20;
-  --disable-background: rgba(0, 0, 0, 0.1);
   --padding: 6px 12px;
+  --pointer-events: auto;
   --background: linear-gradient(180deg, #f2f2f3 0%, #e5e5e6 88.02%);
+  --box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  --hover-color: #231f20;
   --hover-background: linear-gradient(180deg, #f2f2f3 0%, #e5e5e6 88.02%);
   --hover-box-shadow: 0 0 0 1px #fcb034;
+  --active-color: #231f20;
   --active-background: linear-gradient(180deg, #f2f2f3 0%, #e5e5e6 88.02%);
   --active-box-shadow: 0 0 0 1px #ffffff;
-  --box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  --disable-color: rgba(0, 0, 0, 0.35);
+  --disable-background: rgba(0, 0, 0, 0.1);
+  --disable-pointer-events: none;
 }
 
 BUTTON.ss-button.-primary,
 a.ss-button.-primary {
   --background: linear-gradient(180deg, #ffcf36 0%, #fcb034 88.02%);
+  --box-shadow: none;
   --hover-background: #fcb034;
   --hover-box-shadow: none;
   --active-background: #ffd000;
   --active-box-shadow: 0 0 0 1px #fcb034;
-  --box-shadow: none;
 }
 
 BUTTON.ss-button.-yellow-green,
 a.ss-button.-yellow-green {
   --color: #231f20;
   --background: linear-gradient(180deg, #d9e77e 0%, #bfd629 88.02%);
+  --box-shadow: none;
+  --hover-color: #231f20;
   --hover-background: #bfd629;
   --hover-box-shadow: none;
   --active-background: #d9e77e;
   --active-box-shadow: 0 0 0 1px #bfd629;
   --active-color: #231f20;
-  --box-shadow: none;
 }
 
 BUTTON.ss-button.-yellow,
 a.ss-button.-yellow {
   --color: #231f20;
   --background: linear-gradient(180deg, #ffe366 0%, #ffd000 88.02%);
+  --box-shadow: none;
+  --hover-color: #231f20;
   --hover-background: #ffd000;
   --hover-box-shadow: none;
   --active-background: #ffe366;
   --active-box-shadow: 0 0 0 1px #ffd000;
   --active-color: #231f20;
-  --box-shadow: none;
 }
 
 BUTTON.ss-button.-orange,
 a.ss-button.-orange {
   --color: #231f20;
   --background: linear-gradient(180deg, #fab76b 0%, #f68709 88.02%);
+  --box-shadow: none;
+  --hover-color: #231f20;
   --hover-background: #f68709;
   --hover-box-shadow: none;
   --active-background: #fab76b;
   --active-box-shadow: 0 0 0 1px #f68709;
   --active-color: #231f20;
-  --box-shadow: none;
 }
 
 BUTTON.ss-button.-sky-blue,
 a.ss-button.-sky-blue {
   --color: #ffffff;
   --background: linear-gradient(180deg, #57c3db 0%, #00a7cc 88.02%);
+  --box-shadow: none;
+  --hover-color: #ffffff;
   --hover-background: #00a7cc;
   --hover-box-shadow: none;
   --active-background: #57c3db;
   --active-box-shadow: 0 0 0 1px #00a7cc;
   --active-color: #ffffff;
-  --box-shadow: none;
 }
 
 BUTTON.ss-button.-purplish-blue,
 a.ss-button.-purplish-blue {
   --color: #ffffff;
   --background: linear-gradient(180deg, #827cb6 0%, #342b88 88.02%);
+  --box-shadow: none;
+  --hover-color: #ffffff;
   --hover-background: #342b88;
   --hover-box-shadow: none;
   --active-background: #827cb6;
   --active-box-shadow: 0 0 0 1px #342b88;
   --active-color: #ffffff;
-  --box-shadow: none;
 }
 
 BUTTON.ss-button.-purplish-red,
 a.ss-button.-purplish-red {
   --color: #ffffff;
   --background: linear-gradient(180deg, #d9598a 0%, #c60650 88.02%);
+  --box-shadow: none;
+  --hover-color: #ffffff;
   --hover-background: #c60650;
   --hover-box-shadow: none;
   --active-background: #d9598a;
   --active-box-shadow: 0 0 0 1px #c60650;
   --active-color: #ffffff;
-  --box-shadow: none;
 }
 
 BUTTON.ss-button.-gray,
 a.ss-button.-gray {
   --color: #ffffff;
   --background: linear-gradient(180deg, #97989b 0%, #646568 88.02%);
+  --box-shadow: none;
+  --hover-color: #ffffff;
   --hover-background: #646568;
   --hover-box-shadow: none;
   --active-background: #97989b;
   --active-box-shadow: 0 0 0 1px #646568;
   --active-color: #ffffff;
-  --box-shadow: none;
 }
 
 a.ss-link,
@@ -226,15 +240,15 @@ BUTTON.ss-link {
   --active-color: #57c3db;
   --disable-background: none;
   --padding: 0px;
-}
-
-BUTTON.ss-link {
   --background: none;
+  --box-shadow: none;
+  --hover-color: #57c3db;
   --hover-background: none;
   --hover-box-shadow: none;
+  --active-color: #abe1ed;
+  --active-color: #abe1ed;
   --active-background: none;
   --active-box-shadow: none;
-  --box-shadow: none;
 }
 
 BUTTON.ss-button,
@@ -247,36 +261,31 @@ a.ss-link {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: var(--padding);
   gap: 4px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border: none;
-  -webkit-box-shadow: var(--box-shadow);
-  box-shadow: var(--box-shadow);
   text-decoration: none;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   cursor: pointer;
+  padding: var(--padding);
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
   color: var(--color);
   background: var(--background);
+  pointer-events: var(--pointer-events);
   /* Accessibility: Visible in Windows high-contrast theems */
   outline-color: transparent;
   outline-width: 1px;
-}
-
-BUTTON.ss-button > span,
-BUTTON.ss-link > span,
-a.ss-button > span,
-a.ss-link > span {
-  font-size: 1.142em;
 }
 
 BUTTON.ss-button:hover,
 BUTTON.ss-link:hover,
 a.ss-button:hover,
 a.ss-link:hover {
+  color: var(--hover-color);
   background: var(--hover-background);
   -webkit-box-shadow: var(--hover-box-shadow);
   box-shadow: var(--hover-box-shadow);
@@ -288,8 +297,8 @@ a.ss-button:active,
 a.ss-link:active {
   color: var(--active-color);
   background: var(--active-background);
-  -webkit-box-shadow: var(--active-outline);
-  box-shadow: var(--active-outline);
+  -webkit-box-shadow: var(--active-box-shadow);
+  box-shadow: var(--active-box-shadow);
 }
 
 BUTTON.ss-button.disable, BUTTON.ss-button:disabled,
@@ -299,9 +308,16 @@ a.ss-button.disable,
 a.ss-button:disabled,
 a.ss-link.disable,
 a.ss-link:disabled {
+  color: var(--disable-color);
   background: var(--disable-background);
-  color: rgba(0, 0, 0, 0.35);
-  pointer-events: none;
+  pointer-events: var(--disable-pointer-events);
+}
+
+BUTTON.ss-button > span,
+BUTTON.ss-link > span,
+a.ss-button > span,
+a.ss-link > span {
+  font-size: 1.142em;
 }
 
 .ss-card {
@@ -558,7 +574,6 @@ UL.ss-menu, UL.ss-menu-woven {
 }
 
 UL.ss-menu > li.selected, UL.ss-menu-woven > li.selected {
-  --background: #fef3e6;
   position: relative;
 }
 
@@ -574,6 +589,13 @@ UL.ss-menu > li.selected::after, UL.ss-menu-woven > li.selected::after {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 8px;
+}
+
+UL.ss-menu > hr, UL.ss-menu-woven > hr {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 0px;
+  width: 100%;
 }
 
 UL.ss-menu > li > .header, UL.ss-menu-woven > li > .header {
@@ -1176,6 +1198,36 @@ input[type=checkbox].ss-checkbox::after {
   display: var(--inner-dot-display);
   position: relative;
   border-radius: 100%;
+}
+
+.ss-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 38px;
+  background-color: rgba(255, 255, 255, 0.96);
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+li.-dropdown > a > span.ss-icon-Minimize-arrow {
+  display: none;
+}
+
+li.-dropdown:hover > a {
+  background-color: #fef3e6 !important;
+  color: #231f20 !important;
+}
+
+li.-dropdown:hover > a > span.ss-icon-Maximize-arrow {
+  display: none;
+}
+
+li.-dropdown:hover > a > span.ss-icon-Minimize-arrow {
+  display: block;
+}
+
+li.-dropdown:hover > .ss-dropdown-menu {
+  display: block;
 }
 
 .ss-field {
