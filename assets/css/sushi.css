@@ -10,6 +10,16 @@
   --primary-yellow: #fcb034;
 }
 
+.ss-ghost {
+  width: 0px;
+  height: 0px;
+  background-color: none;
+}
+
+:root {
+  --primary-yellow: #fcb034;
+}
+
 #root {
   min-height: 100vh;
 }
@@ -1261,10 +1271,6 @@ TEXTAREA,
 BUTTON {
   font-family: inherit;
   font-size: 1rem;
-}
-
-.small {
-  font-size: 0.429rem;
 }
 
 a.-big-icon {
