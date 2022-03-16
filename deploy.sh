@@ -16,5 +16,6 @@ npm run build
 
 git add .
 git commit -am "deploy"
-git push -f git@github.com:sushiui/sushi.git main:gh-pages
+# git push -f git@github.com:sushiui/sushi.git main:gh-pages
+git push origin gh-pages
 git checkout main
