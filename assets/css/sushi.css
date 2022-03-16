@@ -238,6 +238,7 @@ BUTTON.ss-link {
 }
 
 BUTTON.ss-button,
+BUTTON.ss-link,
 a.ss-button,
 a.ss-link {
   display: -webkit-inline-box;
@@ -266,12 +267,14 @@ a.ss-link {
 }
 
 BUTTON.ss-button > span,
+BUTTON.ss-link > span,
 a.ss-button > span,
 a.ss-link > span {
   font-size: 1.142em;
 }
 
 BUTTON.ss-button:hover,
+BUTTON.ss-link:hover,
 a.ss-button:hover,
 a.ss-link:hover {
   background: var(--hover-background);
@@ -280,6 +283,7 @@ a.ss-link:hover {
 }
 
 BUTTON.ss-button:active,
+BUTTON.ss-link:active,
 a.ss-button:active,
 a.ss-link:active {
   color: var(--active-color);
@@ -289,6 +293,8 @@ a.ss-link:active {
 }
 
 BUTTON.ss-button.disable, BUTTON.ss-button:disabled,
+BUTTON.ss-link.disable,
+BUTTON.ss-link:disabled,
 a.ss-button.disable,
 a.ss-button:disabled,
 a.ss-link.disable,
