@@ -14,7 +14,7 @@ npm run build
 
 # git
 
-git add -A
+git add .
 git commit -am "deploy"
 git push -f git@github.com:sushiui/sushi.git main:gh-pages
 git checkout main
