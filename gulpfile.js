@@ -126,6 +126,7 @@ function views() {
 function watchTask(done) {
   gulp.watch("*.html", html);
   gulp.watch("src/scss/**/*.scss", styles);
+  gulp.watch("src/scss/base.scss", baseStyles);
   gulp.watch("src/scss/icon_font.scss", iconStyle);
   gulp.watch("src/pug/**/*.pug", views);
   gulp.watch("src/js/sushi.js", scripts);
